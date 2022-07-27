@@ -1,7 +1,7 @@
 export async function expectThrows(funcOrPromise: (() => void)|Promise<any>, ErrorClass) {
-    let promise: any = funcOrPromise;
+    let promise: any = funcOrPromise
     if (funcOrPromise instanceof Function) {
-        promise = funcOrPromise();
+        promise = funcOrPromise()
     }
-    await expect(promise).rejects.toThrowError(ErrorClass);
+    await expect(promise).rejects.toThrowError(ErrorClass)
 }

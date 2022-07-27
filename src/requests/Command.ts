@@ -1,4 +1,4 @@
-import { Request } from './Request';
+import { Request } from './Request'
 
-export abstract class Command<TResult = void> extends Request<TResult> {
+export abstract class Command<TResult> extends Request<TResult> {
 }
