@@ -27,3 +27,4 @@ out/
 ### Other ###
 .cache
 .env
+/stats.html

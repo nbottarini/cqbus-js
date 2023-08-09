@@ -1,20 +1,20 @@
-[![npm](https://img.shields.io/npm/v/asimov-cqbus.svg)](https://www.npmjs.com/package/asimov-cqbus)
+[![npm](https://img.shields.io/npm/v/@nbottarini/cqbus.svg)](https://www.npmjs.com/package/@nbottarini/cqbus)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI Status](https://github.com/nbottarini/asimov-cqbus-js/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/nbottarini/asimov-cqbus-js/actions?query=branch%3Amain+workflow%3Aci)
+[![CI Status](https://github.com/nbottarini/cqbus-js/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/nbottarini/cqbus-js/actions)
 
-# Asimov CQBus
+# CQBus
 Simple javascript/typescript command &amp; query bus. For use in CQRS and Clean Architecture / Hexagonal projects.
 
 ## Installation
 
 Npm:
 ```
-$ npm install --save asimov-cqbus
+$ npm install --save @nbottarini/cqbus
 ```
 
 Yarn:
 ```
-$ yarn add asimov-cqbus
+$ yarn add @nbottarini/cqbus
 ```
 
 ## Usage

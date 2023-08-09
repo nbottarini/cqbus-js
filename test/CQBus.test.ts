@@ -89,7 +89,7 @@ let cqBus: CQBus
 let log: string[]
 
 class CreateFullName extends Command<string> {
-    constructor(public firstName: string, public lastName: string) { super() }
+    constructor(readonly firstName: string, readonly lastName: string) { super() }
 }
 
 class CreateFullNameHandler implements RequestHandler<CreateFullName, string> {

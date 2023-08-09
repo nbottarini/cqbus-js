@@ -1,68 +1,27 @@
 module.exports = {
-    root: true,
-    extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-    ],
-    'plugins': ['@typescript-eslint'],
-    'env': {
-        'jest': true,
-    },
-    'parserOptions':  {
-        'ecmaVersion':  2018,
-        'sourceType':  'module',
-    },
-    'rules': {
-        'semi': 'off',
-        'curly': 'off',
-        'dot-notation': 'off',
-        'prettier/prettier': 'off',
-        'prefer-const': 'off',
-        'object-curly-spacing': ['error', 'always'],
-        'no-shadow': 'off',
-        'no-undef': 'off',
-        'no-extend-native': 'off',
-        'prefer-spread': 'off',
-        'require-atomic-updates': 'off',
-        'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
-        'comma-dangle': ['warn', {
-            'functions': 'only-multiline',
-            'arrays': 'always-multiline',
-            'imports': 'always-multiline',
-            'exports': 'always-multiline',
-            'objects': 'always-multiline',
-        }],
-        '@typescript-eslint/no-shadow': ['error'],
-        '@typescript-eslint/semi': ['error'],
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-use-before-define': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/explicit-member-accessibility': ['error', { 'accessibility': 'no-public' }],
-        '@typescript-eslint/prefer-interface': 'off',
-        '@typescript-eslint/no-non-null-assertion': 'off',
-        '@typescript-eslint/no-empty-interface': 'off',
-        '@typescript-eslint/no-var-requires': 'off',
-        '@typescript-eslint/no-unused-expressions': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/ban-types': 'off',
-        '@typescript-eslint/no-inferrable-types': 'off',
-        '@typescript-eslint/no-empty-function': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/no-extra-non-null-assertion': 'off',
-        '@typescript-eslint/no-unused-vars': ['warn', {
-            'vars': 'all',
-            'args': 'none',
-            'ignoreRestSiblings': false,
-        }],
-        '@typescript-eslint/indent': ['error', 4, {
-            'FunctionDeclaration': {
-                'parameters': 'first',
-            },
-            'FunctionExpression': {
-                'parameters': 'first',
-            },
-            'SwitchCase': 1,
-        }],
-    },
-    'parser': '@typescript-eslint/parser',
-};
+  root: true,
+  extends: ['eslint:recommended'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  env: {
+    es6: true,
+    jest: true,
+  },
+  globals: {
+    module: false,
+    require: false
+  },
+  rules: {
+    'semi': ['error', 'never'],
+    'curly': ['error', 'multi-line'],
+    'object-curly-spacing': [ 'error', 'always' ],
+    'dot-notation': 'off',
+    '@typescript-eslint/semi': ['error', 'never'],
+    '@typescript-eslint/no-unused-vars': [
+      'warn', {
+        'vars': 'all',
+        'args': 'none',
+        'ignoreRestSiblings': false,
+      }],
+  },
+}
