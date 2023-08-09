@@ -1,10 +1,12 @@
 {
   "name": "@nbottarini/cqbus",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Simple javascript/typescript command &amp; query bus. For use in CQRS and Clean Architecture / Hexagonal projects",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "browser": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "react-native": "dist/esm/index.js",
   "author": "Nicolás Bottarini <nicolasbottarini@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/nbottarini/cqbus-js#readme",
