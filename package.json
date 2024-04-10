@@ -1,7 +1,7 @@
 {
   "name": "@nbottarini/cqbus",
   "version": "0.5.4",
-  "description": "Simple javascript/typescript command &amp; query bus. For use in CQRS and Clean Architecture / Hexagonal projects",
+  "description": "Simple Typescript and Javascript command/query bus",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "browser": "dist/esm/index.js",
